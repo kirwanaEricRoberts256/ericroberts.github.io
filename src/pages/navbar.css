@@ -1,42 +1,61 @@
-.Navbar{
-    background-color: #333; /* Set the background color */
-  color: #fff; /* Set the text color */
-  height: 70px; /* Set the height of the navbar */
-  display: flex; /* Use flexbox to align items */
-  align-items: center; /* Center the items vertically */
-  justify-content: space-between; /* Spread the items evenly */
-  padding: 0 10px; 
-  position: relative;
-  z-index: 2;
+.Navbar {
+  background-color: #333;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
+}
 
-  
+.Link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 60px;
 }
-.Link{
-    color: #fff; /* Set the link color */
-  text-decoration: none; /* Remove underlines from links */
-  margin: 0 10px; /* Add margin between links */
-  padding: 60px; /* Add padding to the links */
-}
+
 .Link:hover {
-    color: #61dafb; /* Change the link color on hover */
-    
+  color: #61dafb;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar li {
+  list-style-type: none;
+}
+
+.Navbar .Logo {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screen sizes */
+
+  .Navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
   }
-  
-  
-   .Navbar ul{
-    display: flex;
-    justify-content: space-between;
+
+  .Link {
+    padding: 10px;
+    margin: 5px;
   }
-  .Navbar li{
-    list-style-type: none;
-  }
+
   .Navbar .Logo {
-    font-weight: bold; /* Apply bold font weight to the logo */
-    font-size: 24px; /* Set the font size of the logo */
-    padding-left: 100px;
+    padding-left: 10px;
+    margin-bottom: 10px;
   }
+}

@@ -1,80 +1,105 @@
 .About {
-    height: 100vh; /* Set the height of the component to full viewport height */
-    background-color: rgba(0, 0,0, 0.5);
-    width: 100%;
-    height: 100vh;
-  }
-  .About::before{
-    content:"";
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0,0, 0.5);
-    
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
 
-  }
-  
-  .background-image {
-    background-image: url("../pages/logo.JPG"); /* Set the background image */
-    background-size: cover; /* Scale the image to cover the container */
-    background-position: center; /* Center the image within the container */
-    display: flex; /* Use flexbox to align content */
-    flex-direction: column; /* Arrange content vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    height: 100%; /* Make the container fill the component's height */
-    
-  }
-  
-  .logo {
-    width: 200px; /* Adjust the width of the logo image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  h1 {
-    color: white; /* Set the color of the heading text */
-  }
-  .text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%,-50%);
-    color:whitesmoke;
-    border: 2px solid rgba(62, 62, 247, 0.829);
-    padding: 5px;
-  }
-.button{
-  width:200px;
+.About::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-image {
+  background-image: url("../pages/logo.JPG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+h1 {
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  border: 2px solid rgba(62, 62, 247, 0.829);
+  padding: 5px;
+}
+
+.button {
+  width: 200px;
   height: 50px;
   padding: 25px 20px;
-  font-size: 20px;}
- 
-.button button{
-  background-color: #4CAF50;
+  font-size: 20px;
+}
+
+.button button {
+  background-color: #4caf50;
   display: inline-block;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: bold;
   text-align: center;
   border: none;
   border-radius: 5px;
   color: whitesmoke;
-}.button:hover{
-  background-color: #4CAF50;
 }
 
+.button:hover {
+  background-color: #4caf50;
+}
 
-  p{
-    border:1px solid black;
-    padding: 5px;
-    display: inline-block;
-    margin: 30px;
+p {
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  margin: 30px;
+}
 
+.information {
+  column-count: 2;
+  column-gap: 15px;
+  break-inside: void;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screen sizes */
+
+  .text {
+    position: static;
+    transform: none;
+    margin: 10px;
+    border-width: 1px;
+    padding: 10px;
   }
+
+  .button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .information {
-    column-count: 2;
-    column-gap: 15px;
-break-inside: void;
+    column-count: 1;
+    column-gap: 0;
   }
+}

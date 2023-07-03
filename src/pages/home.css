@@ -1,69 +1,99 @@
 .home {
-    background-color: #f7f7f7; /* Set the background color */
-    padding: 20px; /* Add padding to the content */
-  }
-  
-  .home h1 {
-    font-size: 36px; /* Set the font size of the main heading */
-    color: #333; /* Set the text color */
-    margin-bottom: 20px; /* Add some spacing below the heading */
-  }
-  .home p {
-    font-size: 18px; /* Set the font size of the paragraphs */
-    color: #555; /* Set the text color */
-    line-height: 1.5; /* Set the line height for better readability */
-    margin-bottom: 15px; /* Add spacing below the paragraphs */
-  }
-  .home .cta-button {
-    display: inline-block; /* Display the button as inline */
-    padding: 10px 20px; /* Add padding to the button */
-    background-color: #61dafb; /* Set the background color of the button */
-    color: #fff; /* Set the text color */
-    text-decoration: none; /* Remove underlines from the button */
-    border-radius: 4px; /* Add rounded corners to the button */
-    font-size: 16px; /* Set the font size of the button */
-    transition: background-color 0.3s ease; /* Add a smooth transition */
-  }
-  .home .cta-button:hover {
-    background-color: #45b9d4; /* Change the background color on hover */
-  }
-  .background-image {
-    background-image: url("../pages/logo.JPG"); /* Set the background image */
-    background-size: cover; /* Scale the image to cover the container */
-    background-position: center; /* Center the image within the container */
-    display: flex; /* Use flexbox to align content */
-    flex-direction: column; /* Arrange content vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    height: 100%; /* Make the container fill the component's height */
-    
-  }
-  .head{
-    padding-top:1.5cm ;
-  }
-  .columns{
-    column-count: 2;
-    column-gap: 15px;
-break-inside: void;
-  }
-  .button button{
-    background-color: #4CAF50;
-    display: inline-block;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    color: whitesmoke;
-  }.button:hover{
-    background-color: #4CAF50;
-  }
-  .ContactForms form{
-    max-width: 400px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.home .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.home .cta-button:hover {
+  background-color: #45b9d4;
+}
+
+.background-image {
+  background-image: url("../pages/logo.JPG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.head {
+  padding-top: 1.5cm;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 15px;
+  break-inside: void;
+}
+
+.button button {
+  background-color: #4caf50;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.button:hover {
+  background-color: #4caf50;
+}
+
+.ContactForms form {
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f7f7f7;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
+  box-shadow: 0 2px 4px rgba(36, 34, 34, 0.1);
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screen sizes */
+
+  .home h1 {
+    font-size: 24px;
   }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .columns {
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .ContactForms form {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
