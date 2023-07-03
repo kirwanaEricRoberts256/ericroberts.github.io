@@ -2,7 +2,7 @@ import Footer from '../pages/footer'
 import React from "react"
 import './contact.css'
 import logo from "../pages/logo.JPG";
-
+import Button from 'react-bootstrap/Button';
 
 import {Link} from "react-router-dom"
 export default function Contact(){
