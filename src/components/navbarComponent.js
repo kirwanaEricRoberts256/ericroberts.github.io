@@ -3,39 +3,30 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CustomNavbar = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const isMobile = windowWidth <= 576; // Adjust the breakpoint to match your needs
-
+ 
   return (
-    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">Logo</Navbar.Brand>
-        {isMobile ? (
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        ) : null}
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">Hidden brand</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.js">About</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="contact.js">Contacts</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="project.js">Project</a>
+        </li> 
+          </ul>
+    </div>
+  </nav>
   );
 };
 
