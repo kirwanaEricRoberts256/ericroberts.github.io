@@ -10,11 +10,12 @@ export default function Home(){
     return(
         <div className="home">
         <h1 className='head'>Hi there,</h1>
+       
         <div className='columns'>
-        <div><img  src={logo}/></div>
         <div ><p>My name is <b>Kirwana Eric Roberts,</b> i create websites using html,css and react
         i also enage in backend developement with experience in php and mysql come join me in this wonderful adventure of creating websites and steadfast mobile applications.
          </p> </div>
+         <img  src={logo}/><br></br><br></br>
          <div className="button"><button><Link to="/about">DISCOVER</Link></button></div>
          
         </div>

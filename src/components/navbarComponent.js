@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="red" variant="red" expand="lg">
       <Navbar.Brand href="#">Hidden brand</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarCollapse" />
       <Navbar.Collapse id="navbarCollapse">
