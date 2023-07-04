@@ -12,9 +12,9 @@ export default function Navbars() {
       
       <ul >
         <li><Link to="/" className="Link">HOME</Link></li>
-        <li><Link to="/about" className="Link">ABOUT ME</Link></li>
+        <li><Link to="/about" className="Link">ABOUT </Link></li>
         <li><Link to="/contact" className="Link">CONTACT</Link></li>
-        <li><Link to="/project" className="Link">MY PROJECTS</Link></li>
+        <li><Link to="/project" className="Link"> PROJECTS</Link></li>
       </ul>
     </div>
   );
