@@ -92,6 +92,7 @@
   .columns {
     column-count: 1;
     column-gap: 0;
+    align-content: center;
   }
 
   .ContactForms form {
@@ -99,12 +100,22 @@
     padding: 10px;
   }
 }
+
 img {
-  width: 50%;
-  height: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #f0f0f0;
+}
+
+img {
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
 }
+
 
