@@ -19,7 +19,7 @@ export default function Home(){
          
          
         </div>
-        <img  src={logo}/><br></br><br></br>
+        
         <div className='form'>
 <h3>Contact Form</h3>
 <form >
