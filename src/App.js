@@ -4,12 +4,12 @@ import Project from './pages/project'
 import Home from './pages/home'
 import './App.css';
 import {Routes,Route} from "react-router-dom"
-import Navbar from './pages/navbar'
+import Navbars from './pages/navbar'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbars/>
       <Routes>
 <Route path="/" element={<Home/>}/>
 <Route path="/contact" element={<Contact/>}/>

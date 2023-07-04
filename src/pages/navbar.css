@@ -1,4 +1,4 @@
-.Navbar {
+.Navbars {
   background-color: #333;
   color: #fff;
   height: 70px;
@@ -24,16 +24,16 @@
   color: #61dafb;
 }
 
-.Navbar ul {
+.Navbars ul {
   display: flex;
   justify-content: space-between;
 }
 
-.Navbar li {
+.Navbars li {
   list-style-type: none;
 }
 
-.Navbar .Logo {
+.Navbars .Logo {
   font-weight: bold;
   font-size: 24px;
   padding-left: 100px;
@@ -42,7 +42,7 @@
 @media (max-width: 768px) {
   /* Adjustments for smaller screen sizes */
 
-  .Navbar {
+  .Navbars {
     height: auto;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,7 +54,7 @@
     margin: 5px;
   }
 
-  .Navbar .Logo {
+  .Navbars .Logo {
     padding-left: 10px;
     margin-bottom: 10px;
   }
