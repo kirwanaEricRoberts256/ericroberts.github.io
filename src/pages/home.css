@@ -90,7 +90,7 @@
   }
 
   .columns {
-    column-count: 0;
+    column-count: 1;
     column-gap: 0;
   }
 
