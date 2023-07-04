@@ -16,6 +16,7 @@
   margin-bottom: 15px;
 }
 
+
 .home .cta-button {
   display: inline-block;
   padding: 10px 20px;
@@ -81,7 +82,7 @@
 
   .home h1 {
     font-size: 24px;
-    text-align: right;
+    text-align: left;
   }
 
   .home p {
@@ -98,3 +99,12 @@
     padding: 10px;
   }
 }
+img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
