@@ -5,6 +5,7 @@ import Home from './pages/home'
 import './App.css';
 import {Routes,Route} from "react-router-dom"
 import Navbars from './pages/navbar'
+import CustomNavbar from './components/navbarComponent';
 
 function App() {
   return (
