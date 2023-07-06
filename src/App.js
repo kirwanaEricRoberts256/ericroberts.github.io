@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <CustomNavbar/>
-      <Navbars/>
+      
       <Routes>
 <Route path="/" element={<Home/>}/>
 <Route path="/contact" element={<Contact/>}/>
