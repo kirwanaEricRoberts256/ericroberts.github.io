@@ -1,10 +1,22 @@
+import React from "react"
+import Spinner from 'react-bootstrap/Spinner';
 
-export default function Project(){
+function Project(){
     return(
-        <div className="projects">
+        <div>
 
-<h1>just chillinge</h1>
+<h1>loading</h1>
+
+<Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+
+
+
 
         </div>
     )
 }
+
+
+export default Project;

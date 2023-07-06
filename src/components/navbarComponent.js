@@ -31,7 +31,7 @@ function CustomNavbar() {
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                 <Nav.Link as={Link} to="/project">Projects</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
+                
                 <NavDropdown
                   title="Dropdown"
                   id="offcanvasNavbarDropdown-expand-sm"
@@ -53,7 +53,7 @@ function CustomNavbar() {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-success">Search</Button>
+                <Button variant="outline-success" >Search</Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
