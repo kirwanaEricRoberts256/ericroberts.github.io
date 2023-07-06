@@ -22,7 +22,7 @@ function CustomNavbar() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-sm">
-                Offcanvas
+                Eric Roberts
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
